@@ -1,0 +1,245 @@
+.container_tuto{
+    width:100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.liste_tuto{
+    display: flex;
+    width:100%;
+    height:20%;
+}
+
+.tuto_video{
+    width:80%;
+    height:60%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.vignette_tuto{
+    width:15%;
+    min-width: 150px;
+    height:15vw;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,.16);
+    margin-left: 5%;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    background-size: cover;
+}
+.vignette_tuto p{
+    background-color: var(--vert_clair_tr);
+    color:var(--gris_fonce);
+    padding:5px;
+    font-size: .9rem;
+}
+
+
+
+/* EXO RESEAU */
+.container_exo{
+    position:relative;
+    width:100%;
+    height:100%;
+}
+
+.phone,.A,.B,.C,.D,.E,.FGH,.I,.J,.K,.trait{
+    position:absolute;
+}
+.phone{
+    top:13px;
+    left:95px;
+}
+.A{
+    top:118px;
+    left:390px;
+}
+.B{
+    top:240.8px;
+    left:76.2px;
+}
+.C{
+    top:253px;
+    left:394.9px;
+}
+.D{
+    top:240.8px;
+    left:496.7px;
+}
+.E{
+    top:378px;
+    left:21.5px;
+}
+.FGH{
+    top:378px;
+    left:147.8px;
+}
+.I{
+    top:494px;
+    left:609.7px;
+}
+.J{
+    top:378px;
+    left:770.6px;
+}
+.K{
+    top:494px;
+    left:899.6px;
+}
+.trait{
+    top:378px;
+    left:468px;
+}
+
+/* EXO PORTEE */
+.container_exo_portee{
+    position:relative;
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.container_exo_portee h2{
+    text-align: center;
+    padding:15px;
+}
+.container_exo_portee .container_matiere{
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.exo_matiere{
+    display:flex;
+    align-items: center;
+    height:170px;
+    z-index:10;
+}
+.exo_matiere span{
+    color:var(--vert_principal);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.exo_matiere img{
+    width:40px;
+    height:170px;
+    box-shadow: 5px 5px 6px rgba(0,0,0,.16);
+    margin-right:5px;
+}
+.exo_arrow_right {
+    width: 30px;
+    height: 42px;
+    background-color: var(--jaune);
+    clip-path: polygon(0 0, 0 100%, 100% 50%);
+    position: absolute;
+    bottom:15%;
+    right:10%;
+    transform: translateY(50%);
+}
+.exo_fleche{
+    height:10px;
+    width:80%;
+    position:absolute;
+    bottom:15%;
+    right:10%;
+    transform: translateY(50%) translateX(-30px);
+    background-color: var(--jaune);
+}
+.exo_graduation{
+    align-self: flex-end;
+    width:100%;
+    height:30%;
+    background-color: var(--gris_fonce);
+}
+.exo_graduation span{
+    color:var(--jaune);
+    font-weight: bold;
+    font-size:1.5rem;    position:absolute;
+    bottom:10%;
+}
+.exo_graduation span:first-of-type{
+    left:5%;
+}
+.exo_graduation span:last-of-type{
+    right:5%;
+}
+
+
+.sommaire {
+    position: absolute;
+    z-index: 101;
+    top: 70px;
+    left: -20px;
+    border-radius: 25px;
+    height: 50px;
+    width: 85px;
+    background-color: var(--vert_clair2);
+}
+
+.sommaire img {
+    float: right;
+    margin-right: 13px;
+    margin-top: 3px;
+}
+
+.ghost_mode {
+    display: none;
+}
+
+.lien_tuto {
+    position: absolute;
+    z-index: 101;
+    right: 100px;
+    bottom: -30px;
+    border-radius: 25px;
+    height: 85px;
+    width: 50px;
+    padding: 5px;
+    background-color: var(--vert_clair2);
+}
+
+.sommaire img {
+    margin-top: 5px;
+}
+
+.lifedomus_formation_draggable {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 30px 50px;
+}
+
+.carte_menu_presentation_dd.lifedomus{
+    min-width: 350px;
+    max-width: 350px;
+    margin-right: 30px;
+}
+
+.boutonMenuEDC-tyxal.lifedomus {
+    margin: 0 auto;
+    color: #fff;
+}
+
+.progress-dot-bar.lifedomus {
+    bottom: 5px;
+}
+
+.fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 99;
+}
+
+.enter_fullscreen {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}

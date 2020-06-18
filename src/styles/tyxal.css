@@ -1,0 +1,963 @@
+
+/*=============================================
+=                    Menu                     =
+=============================================*/
+
+.tyxalGammeMenu{
+    background-size: "cover";
+    position: "fixed";
+    background-position: "center center";
+    background-repeat: "no-repeat no-repeat";
+    background-position-x: "-400px";
+    overflow:"hidden"
+}
+
+.presentationTyxal h2{
+    color: #354254;
+}
+
+.menu_presentation_tyxal{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.boutonMenuEDC-tyxal {
+    width: 420px;
+    height: 100px; 
+    background-color: #354254;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+    margin: 2vw;
+    align-self: baseline;
+} 
+
+.boutonMenuEDC-tyxal h2 {
+    color:white;
+} 
+
+.back_vert_clair_tyxal{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    position: fixed;
+    justify-content: space-evenly;
+    background-color: #abdbc8;
+    padding:3%
+}
+
+.backCenter{
+    align-items: center;
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    position: fixed;
+    background-color: #abdbc8;
+    padding:3%;
+    justify-content: space-evenly;
+}
+
+.backCenterTwo{
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    position: fixed;
+    background-color: #abdbc8;
+    padding:3%;
+    justify-content: center;
+}
+
+.carte_menu_tyxal{
+    width:24.4vw;
+    height:24.4vw;
+    border-radius: 55px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+    margin:5%;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #D7EAE3;
+    flex-direction: column;
+    margin-bottom: 0%;
+    margin-top: 2%;
+}
+
+
+.carte_menu_tyxal img{
+    height: 50%;
+}
+
+#menu_fonctionnalite_tyxal_detecter{
+    background-color: #abdbc8;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu_fonctionnalite_tyxal_detecter .carte_menu_tyxal{
+    margin-top: -10%;
+}
+
+
+.button_ss_menu_fonctionnalite{
+    display: flex;
+    max-width: 1033px;
+    justify-content: center;
+}
+
+
+.menuEDCTyxal{
+    flex-wrap: wrap;
+    height: auto;
+}
+
+
+#container-fonctions{
+    position: relative;
+}
+#fonctions{
+    width: 25%;
+    position: absolute;
+    bottom: 80px;
+}
+
+#container-packs{
+    position: relative;
+}
+#packs{
+    width: 20%;
+    position: absolute;
+    bottom: 90px;
+}
+
+/*=============================================
+=            Slide presentation .           =
+=============================================*/
+.containerSlideTyx{
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100%;
+}
+.sscontainerSlideTyx{
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    height: 80%;
+    position: relative;
+}
+
+.containerSlideTyxEnFairePlus{
+    background-color:#354254 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+
+.slideTyx {
+    width: 100%;
+}
+
+
+.videoSlide{
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    height: 75%;
+}
+
+
+.containerSlideTyx .arrow_left.arrow_left_radio,
+.containerSlideTyx  .arrow_right.arrow_right_radio,
+.containerSlideTyxEnFairePlus> .arrow_left.arrow_left_radio, 
+#arrowTyx {
+    filter:inherit;
+    background-color: rgba(171, 219, 200, .8);
+    width: 200p;
+    padding: 0.5%;
+    border-radius: 90%;
+}
+
+
+/*=============================================
+=            Liste des produits          =
+=============================================*/
+.container-list-produits-tyxal{
+    padding:0 5%
+}
+
+.list-produits-tyxal {
+    display: inline-flex;
+    margin-bottom: 10px; 
+}
+
+.list-produits-tyxal ul {
+    padding: 5%;
+}
+
+.list-produits-tyxal li {
+    position: relative;
+    background-color: #fff;
+    width: 220px;
+    height:350px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+    padding: 20px 20px 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.list-produits-image-tyxal{
+    width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+    object-position: center;
+}
+    
+
+
+/*=============================================
+=            Fiche présentation           =
+=============================================*/
+
+#backgroundHeader{
+    background-repeat: no-repeat;
+    background-size: 42%;
+    background-position: top -260px right -243px, left -260px bottom -100px;
+}
+
+.sectionsTyxal{
+    background-color:#abdbc8 ;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7% 2%;
+}
+
+.sectionsTyxal--white{
+    background-color: #eaf5f1;
+}
+
+.sectionsTyxal h1{
+    position:relative;
+    z-index: 2;
+}
+
+.sectionsTyxal h1:after{
+    content:"";
+    z-index: -1;
+    position:absolute;
+    bottom:-2px;
+    left:25%;
+    width: 50%;
+    height:5px;
+    background-color: #F9D837;
+}
+
+
+.containerImgTyxal{
+    margin: 4%;
+    height: 230px;
+    margin-bottom: 12%;
+}
+
+.imgTyxal{
+    max-width: 500px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    max-height: 500px;
+}
+      
+.imgTyxalMediumSize{
+    max-width: 230px;
+    height: auto;
+    max-height: 300px;
+}
+
+.iconTyxal{
+    width: 100px;
+    height: 100px;
+}
+
+/*.................header................. */
+
+.header{
+    background-position: 750px -200px, -295px 575px;
+    background-color:#abdbc8 ;
+    background-size: 40%;
+    background-repeat: no-repeat;
+}
+
+/*.......Blocs.......... */
+
+.section_blocs{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 4%;
+    position:relative;
+    overflow-wrap: break-word;
+}
+
+.section_blocs::after{
+    content: "";
+    position: absolute;
+    top: -50px;
+    z-index: 0;
+    width: 85%;
+    height: 3px;
+    background-image: linear-gradient(to right, #24AD8D 33%, rgba(255,255,255,0) 0%);
+    background-position: bottom;
+    background-size: 12px 5px;
+    background-repeat: repeat-x;
+}
+.section_blocs div{
+    width: 130px;
+    height: 130px;
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    align-items: center;
+    background-color: #354254;;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+    position: relative;
+    padding: 2%;
+}
+
+.section_blocs div ::after{
+    content:"";
+    position:absolute;
+    top:-50px;
+    left: 54px;
+    z-index:0;
+    width: 5%;
+    height: 37%;
+    background-image: linear-gradient(#24AD8D 33%, rgba(255, 255, 255,0) 0%);
+    background-position: right;
+    background-size: 3px 10px;
+    background-repeat: repeat-y;
+}
+
+.section_blocs img{
+    position: absolute;
+    width: 40px;
+    object-fit: scale-down;
+}
+
+
+.section_blocs h2{
+    font-size :90%;
+    color:#abdbc8;
+}
+
+
+/*................fonctionnalites................ */
+
+
+#menu_fonctionnalite_tyxal{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width:100vw;
+    height:100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+}
+
+.fondFonctionnalite{
+    width: 300px;
+    height: 300px;
+    background-color: #354254;
+    border-radius: 90%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.backgroundFonctionnalite{
+    background-position: -211px -196px;
+    background-size: 40%;
+    background-repeat: no-repeat;
+}
+
+
+.centerTyxal div{
+    justify-content: center;
+}
+
+
+/*.......Blocs Paragraphes.......... */
+
+.container_paragraphes{
+    width: 100%;
+}
+
+
+.section_bloc_paragraphes{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height:200px;
+    margin: auto;
+    padding: 3%;
+    display: flex;
+    background-color: #abdbc8;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+    overflow: scroll;
+}
+
+
+
+/*.............fonctionnalites suppl............... */
+
+.fonctionnalite, .fonctionnaliteSuppl{
+    border-bottom: 20px solid
+}
+
+.fonctionnaliteSuppl .section_blocs{
+    margin-top: 20%;
+}
+.fonctionnaliteSuppl .section_bloc_paragraphes{
+    background-color: #eaf5f1
+    }
+/*................caracteristiques................ */
+
+.sectionCaracteristiques{
+    z-index: 3;
+}
+
+#container_caracteristique{
+    width: 80vw;
+    height: 70vh;
+    background-color: #abdbc8;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+    margin-top:50px;
+}
+
+#container_caracteristique ul{
+    font-size: 1.7rem;
+    padding: 8% 10%;     
+}
+
+#container_caracteristique li{
+    list-style-type: none;
+      position: relative;   
+      overflow-wrap: anywhere;
+}
+
+#container_caracteristique li::before{
+    content: "";
+    z-index: 1;
+    position: absolute;
+    left: -30px;
+    top: .9rem;
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+    background-color: var(--vert_principal);
+    transform: rotate(45deg);      
+}
+
+/*................avantages-inconvénients................ */
+
+.avantage-inconvenient{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border:30px solid
+}
+
+.containerAvantage{
+    display:flex;
+    flex-direction: row;
+    height: 50vh;
+}
+.containerAvantage h2{
+  margin-bottom:15px;
+}
+
+.containerAvantage p{
+   overflow-wrap: anywhere; 
+}
+
+
+.bloc_sectionAvantage{
+    width: 45%;
+    background-color: #eaf5f1;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+    padding: 2%;
+    margin: 2%;
+    height: inherit;
+    align-self: baseline;
+    overflow: auto;
+}
+
+/*................explications........................ */
+
+.containerBloc_section_explication{
+    display: flex;
+    padding: 5% 2%;
+    position: relative;
+    z-index: 2;
+    justify-content: space-between;
+}
+
+.sectionExplication {
+    background-color:white;
+}
+
+.sectionExplication img{
+    min-width: 400px;
+    height: auto;
+}
+
+
+.sectionExplication .imgTyxal{
+    max-height: 300px;
+
+}
+
+.sectionExplication{
+    border: 30px solid #abdbc8;
+}
+
+
+.blocTexte{
+    width: 45%;
+    max-width: 440px;
+    background-color: #d7eae3;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+    padding: 4%;
+    margin: 2%;
+    height: fit-content;
+    overflow: auto;
+    max-height: 300px;
+}
+
+.containerBloc_section_explication .blocTexte::before{
+    content: "";
+    width: 100%;
+    bottom: 70px;
+    position: absolute;
+    z-index:-1;
+    left: 0;
+}
+
+.blocTexte h2{
+    margin-bottom :20px;
+}
+
+.blocVisuel{
+    display: flex;
+    width: 45%;
+    justify-content: center;
+    position: relative;
+}
+
+.blocVisuel>div{
+    width: 100%;
+}
+
+.ss_container_blocVisuel{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    overflow-x: scroll;
+    width: 400px;
+}
+
+/*...................explication-image........................ */
+.galerie-explication{
+    height: 70vh;
+    width: 100%;
+    margin-left: 35%;
+}
+
+.blocImage-explication{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    transform:translate(0px,0px)!important;
+
+}
+
+.blocImage-explicationDraggable{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+} 
+
+.ssblocImg-explication {
+    width: 600px;
+    max-width: 600px;
+
+}
+
+.ssblocImg-explication img{
+    width: 600px;
+    max-width: 600px;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    padding: 5% 4%;
+}
+/*...................exemple........................ */
+
+.sectionExemple{
+    overflow: hidden;
+    border:20px 0px solid;
+}
+
+.sectionExemple .blocImage{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    overflow:hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.blocImage{
+    height: 100%;
+}
+
+.ssblocImg{
+    height: 300px;
+    width: 300px;
+    padding: 2%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.ssblocImgFull{
+    position: absolute;
+    height: 100%;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 4;
+}
+
+
+
+.ImgNormal{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+} 
+
+.ImgFull{
+    width: 500px !important;
+    height: 500px;
+    max-height:500px;
+    max-width: 500px;
+    object-fit: contain;
+    position: absolute;
+    z-index: 1;
+    align-self: center;
+    transform: scale(1.1);
+    animation: scale-up 0.7s ease-in;
+}
+
+.containerFull{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@-webkit-keyframes scale-up {
+    0% {
+      -webkit-transform: width(300px),heigth(300px);
+              transform: width(300px),heigth(300px);
+    }
+    100% {
+      -webkit-transform: width(800px),heigth(800px);
+              transform: width(800px),heigth(800px);
+    }
+  }
+  @keyframes scale-up {
+    0% {
+        -webkit-transform: width(300px),heigth(300px);
+                transform: width(300px),heigth(300px);
+      }
+      100% {
+        -webkit-transform: width(800px),heigth(800px);
+                transform: width(800px),heigth(800px);
+      }
+  }
+
+
+.sectionExemple{
+    background-color: #abdbc8;
+    display: flex;
+    justify-content: space-around;
+}
+
+.sectionExemple .galerie {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+}
+
+.blocImage{
+    flex-wrap: wrap;
+}
+
+/*...................Video........................ */
+
+.sectionVideos{
+    overflow: hidden;
+    background-color: #354254;
+}
+.sectionVideos h1{
+    margin-bottom:50px;
+    color: white;
+}
+
+.sectionVideos h1 span{
+    color: white;
+}
+
+.blocVideos{
+    padding: 2%;
+    display: flex;
+    overflow: hidden;
+    width: 800px;
+    transform: translate(1600px, 0px);
+} 
+
+.videoTyxal-sectionVideo{
+    width: 800px; 
+    height: 490px;
+}
+
+.videoTyxal-sectionVideo> div{
+    width: 800px;
+    height: 100%;
+    margin-right: 20%;
+}
+
+.videoTyxal-sectionVideo video{
+   height: unset;
+   width: 800px;
+
+} 
+
+.videoTyxal-sectionVideo iframe{
+    height: 480px;
+    width: 800px;
+}
+
+.galerie-video{
+    height: 70vh;
+    width: 100%;
+    display:flex;
+    align-items: center;
+}
+
+.blocImage-video{
+  display: flex;
+  flex-direction: row;
+}
+
+.ssblocImg-video{
+    width: 800px;
+    margin-right: 60px;
+}
+
+.ssblocImg-video video, .ssblocImg-video div {
+    width: 800px;
+    height: 484px;
+    object-fit: cover;
+    object-position: center;
+    margin: 5%;
+}
+
+.ssblocImg-video div{
+    height: 490px;    
+    width: 800px;
+} 
+
+/*...................multimedia........................ */
+
+.sectionMultimedia{
+    background-color: #abdbc8;
+    display: flex;
+    justify-content: space-around;
+}
+
+.ImagePstMultimedia{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.sectionMultimedia .blocImages{
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sectionMultimedia .blocTexte{
+    width: 60%;
+    height: 40vh;
+}
+
+.ImagePstMultimedia img{
+    width: 400px;
+}
+
+
+.blocIcones{
+    display:flex;
+    width: 50%;
+    display: flex;
+    justify-content:space-evenly
+}
+
+.imgMiniTyxal{
+    width: 200px;
+}
+
+/*=============================================
+=            En faire plus                 =
+=============================================*/
+
+
+.drawerTyxal {
+    background-color: white;
+    width: 100%;
+    height: 50%;
+    right: 0;
+    z-index: 2;
+}
+
+.drawerTyxal.open{
+    bottom: 0;
+    transform: translate(0, -80%);
+    padding: 4%;
+    background-color: var(--vert_clair_tr);
+}
+    
+
+.listProduitDrawerTyxal{
+    display: flex;
+}
+.listProduitDrawerTyxalFull{
+    display: flex;
+    justify-content: center;
+}
+.listProduitDrawerTyxal ul{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.listProduitDrawerTyxal li{
+    min-width: 150px ;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.listProduitDrawerTyxalFull li{
+    list-style-type: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0% 3%;
+    width: 100%;
+}
+
+
+.listProduitDrawerTyxal img,.listProduitDrawerTyxalFull img {
+    margin-bottom:10px
+}
+
+
+.boutonPlus {
+    position: absolute;
+    z-index: 2;
+    top: 70px;
+    left: -20px;
+    border-radius: 25px;
+    height: 50px;
+    width: 85px;
+    background-color: var(--vert_clair2);
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}  
+
+.boutonPlus:after {
+    content: "+";
+    font-size: 3rem;
+}
+
+.arrow_left, .arrow_right{
+    z-index:10;
+}
+
+.videoTyxal{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-right: 50px;
+}
+
+.videoTyxal>div{
+    min-width: 400px;
+}
+
+

@@ -1,0 +1,126 @@
+$vert_principal: #24AD8D;
+$vert_fonce: #20776C;
+$vert_vegetal: #92bf5b;
+$vert_clair1: #74c9b8;
+$vert_clair2: #abdbc8;
+$vert_clair3: #d7eae3;
+$vert_clair4: #eaf5f1;
+$nude: #D6CECB;
+$taupe_fonce: #968078;
+$taupe_fonce2: #af9f99;
+$gris_fonce: #354254;
+$red: #ed4762;
+$borderRadius: 15px;
+
+.flex_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+}
+
+.back_vert_pr {
+    background-color: $vert_principal;
+}
+
+
+.login-form-wrap {
+    background-color: #fff;
+    width: 35%;
+    max-width: 400px;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 30px auto;
+    text-align: center;
+    padding: 20px 40px;
+    border-radius: 4px;
+    box-shadow: 0px 30px 50px 0px rgba(0, 0, 0, 0.2);
+    p {
+    position: relative;
+    font-size: 1rem;
+        &.error {
+            color: $red;
+        }
+    }
+    input {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    outline: none;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 4px;
+    }
+    input[type="text"],
+    input[type="password"]{
+        width: 100%;
+        padding: 0 0 0 10px;
+        margin: 0;
+        color: $gris_fonce;
+        border: 1px solid #c2c0ca;
+        font-style: normal;
+        font-size: 16px;
+        appearance: none;
+        position: relative;
+        display: inline-block;
+        background: none;
+        &:focus {
+            border-color:$vert_principal;
+        }
+        &:valid ~ .validation {
+            display:block;
+            border-color:$vert_principal;
+            span {
+                background: $vert_principal;
+                position:absolute;
+                border-radius: 6px;
+                &:first-child {
+                    top: 30px;
+                    left: 14px;
+                    width: 20px;
+                    height: 3px;
+                    transform: rotate(-45deg);
+                }
+                &:last-child {
+                    top: 35px;
+                    left: 8px;
+                    width: 11px;
+                    height: 3px;
+                    transform: rotate(45deg);
+                }
+            }
+        }
+    }
+    .validation {
+        display:none;
+        position: absolute;
+        content: " ";
+        height:60px;
+        width:30px;
+        right:15px;
+        top:0px;
+    }
+
+    input[type="submit"] {
+        border: none;
+        display:block;
+        border-radius: 4px;
+        background-color: $vert_fonce;
+        color: #fff;
+        font-weight: bold;
+        text-transform:uppercase;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        font-size: 18px;
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        &:hover {
+            background-color: $vert_principal;
+            transition: all 0.2s ease;
+        }
+    }
+}
+    

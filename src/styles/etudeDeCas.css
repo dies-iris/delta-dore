@@ -1,0 +1,442 @@
+.fullwidth.hidden {
+    position: relative;
+    overflow: hidden;
+}
+
+
+/*--------PRESENTATION DU CAS -----------*/
+.presentation-cas {
+    text-align: center;
+    padding-top: 4%;
+}
+
+.presentation-cas img {
+    height: 60vh;
+    object-fit: contain;
+    margin: 0 auto;
+    display: block;
+}
+
+.fullwidth.slides {
+    position: relative;
+}
+
+.slides>img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider {
+    position: absolute;
+    background-color: #fff;
+    top: 50px;
+    right: 50px;
+    padding: 20px 60px;
+    width: 50%;
+    height: 60vh;
+    box-shadow: 0 10px 30px -24px rgba(0,0,0,0.5);;
+}
+
+.slider button {
+    position: absolute;
+    bottom: -100px;
+    right: 0;
+}
+
+.slider p {
+    margin: 0 0 20px;
+    font-size: 1.2em;
+}
+
+.etude_de_cas {
+    display: flex;
+}
+
+.arrow_left, .arrow_right {
+    position: absolute;
+    width: 40px;
+    top: 50%;
+}
+
+.arrow_left {
+    left: 10px;
+    transform: translateX(50%) rotate(-90deg);
+  }
+  .arrow_right {
+    right: 10px;
+    transform: translateX(-50%) rotate(90deg);
+  }
+
+  .progress-bar-light {
+      position: absolute;
+      bottom: 100px;
+      left: 50%;
+      transform: translate(-50%);
+      width: 400px;
+      height: 10px;
+      border-radius: 5px;
+      background-color: var(--vert_clair3);
+  }
+
+  .progress-bar-darker {
+    background-color: var(--vert_principal);
+    height: 10px;
+    border-radius: 5px;
+    transition: all .5s;
+  }
+
+/*-------------LISTE de PRODUITS--------------*/
+
+.list-produits {
+    display: inline-flex;
+    margin-bottom: 10px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.list-produits li {
+    position: relative;
+    background-color: #fff;
+    width: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 10px 51px -24px rgba(0,0,0,0.75);
+    padding: 20px 15px 3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.list-produits li p {
+    font-size: .9rem;
+}
+
+.list-produits li strong {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.list-produits li>*:not(.button_info-produit) {
+    margin-bottom: 10px;
+}
+
+.list-produits-image{
+    width: 100%;
+    max-height: 100px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.button_info-produit {
+    position: absolute;
+    line-height: 0;
+    bottom: -20px;
+    right: 20px;
+    height: 40px;
+}
+
+/*---------INFO PRODUIT----------*/
+.info-produit {
+    overflow: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 70%;
+    height: 80%;
+    z-index: 999;
+    border-radius: 15px;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 10px 51px -24px rgba(0,0,0,0.5);
+}
+
+.info-produit h3, .info-produit h3+p {
+    text-align: center;
+}
+
+.info-produit .list-produits-image {
+    max-height: 200px;
+}
+
+.info-produit .icone {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.info-produit ul {
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+.info-produit li,
+li.list_style {
+    margin: 10px 0;
+    position: relative;
+}
+
+.info-produit li:before, 
+.list_style:before {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    left: -30px;
+    top: .37rem;
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+    background-color: var(--vert_principal);
+    transform: rotate(45deg);
+}
+
+/*ARROWS*/
+.open-produits {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    bottom: 0;
+    text-align: center;
+    z-index: 101;    
+    /* background-color: var(--vert_clair_tr); */
+}
+
+.open-produits img {
+
+    fill: var(--gris_fonce);
+    width: 50px;
+    height: 50px;
+    margin: 5px auto;
+    transition: all .5s;
+}
+
+.arrow_down {
+    transform: rotate(180deg);
+}
+
+/*--------PLAN DE MAISON------------*/
+img.plan {
+    display: block;
+    width: 80%;
+    object-fit: contain;
+    align-self: flex-start;
+    max-height: calc(100vh - 120px);
+}
+
+/*-------------DRAGGABLE OBJECTS--------*/
+
+.render {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    z-index: 100;
+}
+
+.render>* {
+    position: absolute;
+}
+
+.fond-transparent {
+    position: absolute;
+    z-index: 100;
+    width: 100px;
+    height: 100px;
+    background-color: var(--vert_clair_tr);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    transition: background-color .3s, width .3s, height .3s;
+}
+
+.fond-transparent.clair_dragged {
+    background-color: var(--vert_clair_tr2);
+    width: 70px;
+    height: 70px;
+}
+
+img.draggable {
+    width: 80%;
+    object-fit: contain;
+    pointer-events: none;
+}
+
+/*-----------BUTTONS : correction, recap, poubelle --------*/
+.edc.buttons {
+    position: relative;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.edc.buttons>div {
+    border: none;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    padding: 20px 0;
+    box-shadow: 0 10px 51px -24px rgba(0,0,0,0.75);
+    background-color: var(--nude);
+    text-align: center;
+    transition: all .3s;
+}
+
+.edc.buttons .scale {
+    transform: scale(1.2); 
+    background-color: var(--vert_principal);
+}
+
+.icon {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;    
+}
+
+
+/*----------TOTAL------------------*/
+.total {
+    padding: 20px;
+    text-align: center;
+    border: 2px solid var(--nude);
+    border-radius: 15px;
+    width: fit-content;
+}
+
+/*------------- RECAP CHECKBOX------------*/
+/* Base for label styling */
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+  position: absolute;
+  left: -9999px;
+}
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+    display: block;
+  position: relative;
+  padding-left: 1.95em;
+  cursor: pointer;
+}
+
+/* checkbox aspect */
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0;
+  width: 1.25em; height: 1.25em;
+  border: 2px solid #ccc;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,.1);
+}
+/* checked mark aspect */
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+  content: '\2713\0020';
+  position: absolute;
+  top: .15em; 
+  left: .22em;
+  font-size: 1.3em;
+  line-height: 0.8;
+  color: var(--vert_principal);
+  transition: all .2s;
+  font-family: 'Lucida Sans Unicode', 'Arial Unicode MS', Arial;
+}
+/* checked mark aspect changes */
+[type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+[type="checkbox"]:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+[type="checkbox"]:checked + label:before {
+  border: 2px solid var(--vert_principal);
+}
+
+.recap_checkbox {
+    margin: 20px 0;
+}
+
+/*------------FILTER SCREEN (MenuSSEDC)------------*/
+.edc.filter {
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    background-color: var(--gris_fonce);
+    color: #fff;
+}
+
+.container_boutonEDC {
+    padding: 10px;
+    text-align: center;
+}
+
+.container_boutonEDC h3 {
+    color: #fff;
+}
+
+.container_boutonEDC>.button {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    transition: all .3s;
+    margin: 0 20px 5px;
+    background-color: #fff;
+}
+
+.svg {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    filter: invert(56%) sepia(97%) saturate(307%) hue-rotate(116deg) brightness(82%) contrast(98%);
+}
+
+.container_boutonEDC>.button.selected {
+    background-color: var(--vert_principal);
+}
+
+.selected .svg {
+    filter: invert(22%) sepia(38%) saturate(435%) hue-rotate(175deg) brightness(92%) contrast(87%);
+}
+
+.menuEDC {
+    display: flex;
+    flex-direction: row;
+    padding: 2vw;
+    width: 100%;
+    height: calc(100% - 100px);
+    background-blend-mode: hard-light;
+}
+
+
+.menuEDC .boutonMenuEDC {
+    width: 15vw;
+    max-width: 150px;
+    max-height: 150px;
+    height: 15vw;
+    background-color: rgba(255,255,255);
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 10px rgba(0,0,0,.16);
+    /* color: #354254; */
+    /* background-size: contain; */
+    margin: 2vw;
+}

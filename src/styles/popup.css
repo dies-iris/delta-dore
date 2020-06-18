@@ -1,0 +1,26 @@
+.popup .icone {
+    margin: 10px 20px ;
+}
+
+.popup .icone.yes {
+    opacity: .5;
+}
+
+.popup {
+    z-index: 100;
+    max-width: 300px;
+    position: absolute;
+    top: 50%;
+    right: 17%;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,.2);
+    
+}
+
+.popup.top {
+    top: 0;
+    right: 0;
+}

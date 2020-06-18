@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'EuclidFlex';
+  src: local('EuclidFlex'),
+  url('./fonts/EuclidFlex-Regular.woff') format('woff'),
+  url('./fonts/euclidflex-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* @font-face {
+  font-family: 'EuclidFlex';
+  src: local('EuclidFlex'),
+  url('./fonts/EuclidFlex-Bold.woff') format('woff'),
+  url('./fonts/EuclidFlex-Bold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: bold;
+} */
+
+body {
+  margin: 0;
+  font-family: 'EuclidFlex', 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
